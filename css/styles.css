@@ -34,9 +34,16 @@ body{
     border: none;
     padding: 15px 0px;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
     margin-bottom: 25px;
-    transition: border-color .3s ease-in-out;
+    /* transition: border-color 0.3s ease-in-out; */
+}
+
+
+/* [] 사이에 쓰인 것들은 특성 선택자(attribute selector) */
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder{
@@ -45,4 +52,19 @@ body{
 
 #login-form input:focus{
     border-color: var(--yellow);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+/* a 태그 꾸미기 */
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit; /*login-form의 색상을 받아오지만 설정되어 있는게 없기에 default 검정*/
+    font-size: 14px;
 }
