@@ -1,0 +1,56 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+
+    /* padding을 주면 기존에 주었던 박스 크기에서 더 초과가 되기때문에
+    박스 틀로 가두어 놔서 padding을 주어도 원래 기존 크기는 변화 없게함 */
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.2)
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__link {
+    position: relative;
+    color: #2e363e;
+}
+
+.nav__notification{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    /* display: block; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+
+}
+
+.nav__notification_1{
+    background-color: tomato;
+    width: 7px;
+    height: 7px;
+    /* display: block; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
