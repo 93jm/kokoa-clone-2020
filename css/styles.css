@@ -17,6 +17,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
     /* 임의로 세로 길이를 길게하여 스크롤을 테스트 할 수 있는 방법 */
-    /* height: 1000vh; */
+    height: 1000vh;
     
 }
