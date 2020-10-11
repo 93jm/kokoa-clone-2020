@@ -15,7 +15,7 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
-
+@import "screens/find.css";
 
 body{
     /* body에 넣어 default 색상으로 만들어줌 */

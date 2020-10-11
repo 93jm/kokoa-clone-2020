@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!-- To Do: WiFi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+            <!--Battery Icon-->
+            <!--Lightning Icon-->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span class="screen-header__icons_dot"></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4 class="open-chat__title">Open Chat</h4>
+                <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags">#bts#army#world</h6>
+                    <!-- 대문자는 디자인적인 요소기에 그런점을 보여주고 싶다면 html에서는
+                    소문자를 사용하고 css를 이용해 대문자로 바꿔준다 -->
+                    <div class="open-post__members">
+                        <img src="file:///C:/Study/GitHub/kokoa-clone-2020/screenshots/%603%601.PNG" alt="">
+                        <span class="open-post__momber-count">802 mombers</span>
+                        <div class="divider"></div>
+                        <span class="open-post__momber-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="screenshots/Bts.jpg" alt="">
+                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>999+</span></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="open-chat">
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#비밀의 숲 시즌3</h5>
+                    <h6 class="open-post__hashtags">#actor#drama#tvn</h6>
+                    <!-- 대문자는 디자인적인 요소기에 그런점을 보여주고 싶다면 html에서는
+                    소문자를 사용하고 css를 이용해 대문자로 바꿔준다 -->
+                    <div class="open-post__members">
+                        <img src="file:///C:/Study/GitHub/kokoa-clone-2020/screenshots/%603%601.PNG" alt="">
+                        <span class="open-post__momber-count">134 mombers</span>
+                        <div class="divider"></div>
+                        <span class="open-post__momber-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="screenshots/secretforest.jpg" alt="">
+                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>999+</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification_1"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

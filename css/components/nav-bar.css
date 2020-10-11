@@ -33,14 +33,14 @@
     background-color: tomato;
     width: 7px;
     height: 7px;
-    /* display: block; */
+    display: block;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
     position: absolute;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* color: white; */
+    /* font-weight: 600; */
     left: 30px;
     bottom: 30px;
 }
