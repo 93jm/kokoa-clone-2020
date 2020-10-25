@@ -1,17 +1,18 @@
 /* status-bar는 모든 페이지에 존재하여야 하기에 따로 구현 */
 
 .status-bar{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%; */
     display: flex;
     justify-content: center;
     padding: 5px 3px;
     /* z-index: 1; */
+    
 
     /* padding을 주면 기존에 주었던 박스 크기에서 더 초과가 되기때문에
     박스 틀로 가두어 놔서 padding을 주어도 원래 기존 크기는 변화 없게함 */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* background-color: chartreuse; */
 
 }
