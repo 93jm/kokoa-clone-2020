@@ -6,11 +6,15 @@
     justify-content: center;
 
 }
+.alt-header__column {
+    width: 33%;
+}
 
 .alt-header__title {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 600;
     margin: 0;
+    /* margin 0 auto는 위아래 여백 없이 가로 중앙에 배치되는 가장 기본적인 서식 */
 }
 
 .alt-header__column:first-child{
@@ -19,4 +23,15 @@
 
 .alt-header__column:last-child{
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.alt-header__column span:last-child{
+    margin-left: 20px;
+}
+
+.alt-header__column:nth-child(2) {
+    text-align: center;
 }
