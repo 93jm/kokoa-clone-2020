@@ -1,46 +1,85 @@
 .nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f9f9fa;
-    padding: 20px 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
 
-    /* padding을 주면 기존에 주었던 박스 크기에서 더 초과가 되기때문에
+  /* padding을 주면 기존에 주었던 박스 크기에서 더 초과가 되기때문에
     박스 틀로 가두어 놔서 padding을 주어도 원래 기존 크기는 변화 없게함 */
-    box-sizing: border-box;
-    border-top: 1px solid rgba(121, 121, 121, 0.2)
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.2);
 }
 
 .nav__list {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__link {
-    position: relative;
-    color: #2e363e;
+  position: relative;
+  color: #2e363e;
 }
 
-.nav__notification{
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
-.nav__notification_1{
-    background-color: tomato;
-    width: 7px;
-    height: 7px;
-    display: block;
-    border-radius: 5px;
-    position: absolute;
-    /* display: flex; */
-    /* justify-content: center;
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.nav__notification_1 {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  /* display: flex; */
+  /* justify-content: center;
     align-items: center; */
-    /* color: white; */
-    /* font-weight: 600; */
-    left: 30px;
-    bottom: 30px;
+  /* color: white; */
+  /* font-weight: 600; */
+  left: 30px;
+  bottom: 30px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.6s;
 }

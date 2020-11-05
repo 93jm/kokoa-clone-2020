@@ -1,31 +1,62 @@
-#friends-display-link{
-    text-align: center;
-    display: block;
-    background-color: #fafafa;
-    padding: 15px 0px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    margin-top: -10px;
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  margin-top: -10px;
 }
 
-#friends-display-link i{
-    color: rgba(0, 0, 0, 0.3);
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
 }
-
 
 .friends-screen {
-    padding: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
 
-.friends-screen__channel{
-    margin-top: 25px;
-    border-top: var(--main-border);
-    padding-top: 15px;
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
 }
 
-.friends-screen__channel-header{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    color:rgba(0, 0, 0, 0.5)
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* hidden 처리를 하였기 때문에 아직 splash-screen은 존재하지만
+    마우스에 걸리지 않게 빠져버렸음 */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  /* absolute 를 줘서 모든것 위에 있게함 */
+  height: 100vh;
+  /* 화면 높이 100프로를 의미 */
+  width: 100vw;
+  /* 화면 넓이 100프로를 의미 */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  /* forwards는 마지막 속성 값(마지막 keyframes으로 정해짐)을
+  애니메이션이 끝나고 유지한다
+  즉 opacity: 0이 애니메이션 끝나고 유지하는 것 */
+  animation-delay: 2s;
 }
