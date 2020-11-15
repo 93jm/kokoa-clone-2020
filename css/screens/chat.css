@@ -136,7 +136,7 @@
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -192,7 +192,7 @@
   outline: none;
 }
 
-.reply .reply__column:first-child,
+.reply .fa-plus-square,
 .reply .fa-smile-wink,
 .reply button {
   transition: opacity 0.3s ease-in-out;
@@ -207,7 +207,7 @@
 /* focus-within은 reply 내부에 focus 된 element 가 있는지 보는것
 즉 내부에 어떤 element가 focus가 되었다면 그 뒤에 명시한 일이 일어난다. */
 
-.reply:focus-within input {
+.reply input:focus {
   width: 94vw;
   transform: translateX(-13%) translateY(-80px);
 }
