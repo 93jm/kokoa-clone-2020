@@ -128,3 +128,7 @@
   /* will-change는 그래픽카드를 이용해서 애니메이션을 가속화 시킨다 브라우저도 도와줌 */
   animation: heartBeat 1s linear infinite;
 }
+
+#find-screen {
+  height: 120vh;
+}
